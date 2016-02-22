@@ -39,7 +39,6 @@
             this.cbTile = new System.Windows.Forms.ComboBox();
             this.lblBackColor = new System.Windows.Forms.Label();
             this.cbBackColor = new System.Windows.Forms.ComboBox();
-            this.cbInstant = new System.Windows.Forms.CheckBox();
             this.gbAnim = new System.Windows.Forms.GroupBox();
             this.lblStyle = new System.Windows.Forms.Label();
             this.nudDuration = new System.Windows.Forms.NumericUpDown();
@@ -55,6 +54,7 @@
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.lblBody = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.cbInstant = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudDelay)).BeginInit();
             this.gbColor.SuspendLayout();
             this.gbAnim.SuspendLayout();
@@ -173,16 +173,6 @@
             this.cbBackColor.Size = new System.Drawing.Size(187, 21);
             this.cbBackColor.TabIndex = 0;
             // 
-            // cbInstant
-            // 
-            this.cbInstant.AutoSize = true;
-            this.cbInstant.Location = new System.Drawing.Point(9, 23);
-            this.cbInstant.Name = "cbInstant";
-            this.cbInstant.Size = new System.Drawing.Size(94, 17);
-            this.cbInstant.TabIndex = 5;
-            this.cbInstant.Text = "Instant dismiss";
-            this.cbInstant.UseVisualStyleBackColor = true;
-            // 
             // gbAnim
             // 
             this.gbAnim.Controls.Add(this.lblStyle);
@@ -264,7 +254,6 @@
             this.txtIconPath.Name = "txtIconPath";
             this.txtIconPath.Size = new System.Drawing.Size(187, 20);
             this.txtIconPath.TabIndex = 8;
-            this.txtIconPath.Text = "C:/Users/Odus/Desktop/owl.png";
             this.txtIconPath.Click += new System.EventHandler(this.txtIconPath_Click);
             // 
             // lblIcon
@@ -345,6 +334,16 @@
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Title";
             // 
+            // cbInstant
+            // 
+            this.cbInstant.AutoSize = true;
+            this.cbInstant.Location = new System.Drawing.Point(9, 23);
+            this.cbInstant.Name = "cbInstant";
+            this.cbInstant.Size = new System.Drawing.Size(94, 17);
+            this.cbInstant.TabIndex = 5;
+            this.cbInstant.Text = "Instant dismiss";
+            this.cbInstant.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -384,7 +383,6 @@
         private System.Windows.Forms.Button btnDismiss;
         private System.Windows.Forms.NumericUpDown nudDelay;
         private System.Windows.Forms.GroupBox gbColor;
-        private System.Windows.Forms.CheckBox cbInstant;
         private System.Windows.Forms.Label lblBodyColor;
         private System.Windows.Forms.ComboBox cbBody;
         private System.Windows.Forms.Label lblTileColor;
@@ -406,6 +404,7 @@
         private System.Windows.Forms.Label lblBody;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TextBox txtBody;
+        private System.Windows.Forms.CheckBox cbInstant;
     }
 }
 

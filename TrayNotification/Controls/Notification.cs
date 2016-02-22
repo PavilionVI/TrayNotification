@@ -117,7 +117,7 @@ namespace TrayNotification
         /// Shows the notification for a set amount of time.
         /// </summary>
         /// <param name="delay">Time in milliseconds to display before dismissal.</param>
-        public void ShowWithDelay(int delay)
+        public void Show(int delay)
         {
             base.Show();
 

@@ -65,7 +65,7 @@ namespace TestForm
             };
 
             if (cbDelay.Checked)
-                _notification.ShowWithDelay((int)nudDelay.Value);
+                _notification.Show((int)nudDelay.Value);
             else
                 _notification.Show();
         }

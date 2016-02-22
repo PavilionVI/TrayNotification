@@ -61,9 +61,9 @@ namespace TrayNotification.Providers
             var flags = (int)Animation | (int)Direction;
 
             if (Target.Visible)
-                flags = flags | AW_ACTIVATE;
+                flags |= AW_ACTIVATE;
             else
-                flags = flags | AW_HIDE;
+                flags |= AW_HIDE;
 
             AnimateWindow(Target.Handle, Duration, flags);
         }

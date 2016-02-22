@@ -5,18 +5,19 @@ TrayNotification is a fully flexible popup notification system for use in your p
 
 ##About
 You can customize almost everything, including:
--Back, tile and text colors
--Display image & its padding
--Animation style and direction (popup/toast, slide from bottom/side)
--Spacing from working screen area
--Animation duration
--Popup lifetime - await dismissal or set custom
--Something else I probably forgot
+
+- Back, tile and text colors
+- Display image & its padding
+- Animation style and direction (popup/toast, slide from bottom/side)
+- Spacing from working screen area
+- Animation duration
+- Popup lifetime - await dismissal or set custom
+- Something else I probably forgot
 
 ##Usage
 With so many options, it was difficult to design a configuration. Neither a gigantic constructor nor a million properties were desirable. I ended up grouping it into 2x models for the image & coloring, supplying animation flags in the constructor, and duration options via the Show method.
 
-Here's how to set it up the color and image groups:
+Here's how to set up the color and image models:
 
 ```C#
 Coloring coloring = new Coloring()

@@ -40,22 +40,23 @@ namespace TestForm
         {
             var coloring = new Coloring()
             {
-                BackColor = Color.White,
-                Tile = Control.DefaultBackColor,
+                BackColor = Color.FromName(cbBackColor.SelectedItem.ToString()),
+                Tile = Color.FromName(cbTile.SelectedItem.ToString()),
 
-                Body = Brushes.Black
+                Body = new SolidBrush(Color.FromName(cbBody.SelectedItem.ToString()))
             };
 
             var notifIcon = new NotifIcon()
             {
-                Image = Image.FromFile(@""),
+                Image = Image.FromFile(txtIconPath.Text),
                 Padding = 10
             };
 
-            var notification = new Notification(Style.Slide, Direction.Up, 500)
+            _notification = new Notification((Style)cbFlags.SelectedItem, 
+                Direction.Up, (int)nudDuration.Value)
             {
-                Title = "Hello World",
-                Body = "Changed my mind, going back inside.",
+                Title = txtTitle.Text,
+                Body = txtBody.Text,
 
                 Padding = 10,
 
